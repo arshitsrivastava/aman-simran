@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aman & Simran · Engagement</title>
+<meta name="description" content="With the blessings of the Almighty and our beloved family, you are cordially invited to the engagement ceremony of Aman & Simran · Tuesday, 8th December 2026 · Varanasi">
+<meta name="theme-color" content="#fbefe6">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aman & Simran · Engagement Ceremony">
+<meta property="og:description" content="Tuesday, 8th December 2026 · The Kasha Resort, Varanasi. You and your family are cordially invited.">
+<meta property="og:image" content="https://arshitsrivastava.github.io/aman-simran/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://arshitsrivastava.github.io/aman-simran/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Aman & Simran">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/engagement_background.webp" as="image">
+
+<style>
+  @font-face { font-family: "Great Vibes"; src: url("assets/fonts/GreatVibes-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Fraunces"; src: url("assets/fonts/Fraunces-600.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Jakarta"; src: url("assets/fonts/PlusJakartaSans.ttf") format("truetype"); font-weight: 200 800; font-display: swap; }
+
+  :root {
+    --maroon: #7a1f2b;
+    --gold: #a87b2a;
+    --gold-bright: #e2b85c;
+    --gold-soft: #d9b878;
+    --ink: #3b2a25;
+    --muted: #7b6a62;
+    --card: rgba(255, 250, 240, 0.86);
+    --card-deep: rgba(225, 207, 180, 0.6);
+    --line: rgba(168, 123, 42, 0.35);
+    --bg: #fbefe6;
+    --deva: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
+    --deva-sans: "Noto Serif Devanagari", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body { background: #efe6d8; color: var(--ink); font-family: "Jakarta", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  a { color: inherit; text-decoration: none; }
+  html[lang="hi"] .body, html[lang="hi"] .small, html[lang="hi"] p, html[lang="hi"] h3 { font-family: var(--deva-sans), "Jakarta", sans-serif; }
+
+  /* ---------- Welcome ---------- */
+  #welcome {
+    position: fixed; inset: 0; z-index: 30; color: #fff; text-align: center;
+    background: #2a1714 url("assets/engagement_background.webp") center / cover;
+    transition: opacity .6s ease, visibility .6s;
+  }
+  #welcome.gone { opacity: 0; visibility: hidden; }
+  #welcome .veil { height: 100%; overflow-y: auto; display: flex; flex-direction: column; justify-content: center;
+    padding: max(40px, env(safe-area-inset-top)) 24px max(40px, env(safe-area-inset-bottom));
+    background: linear-gradient(rgba(40, 20, 18, .45), rgba(40, 20, 18, .68)); }
+  #welcome .inner { max-width: 400px; margin: 0 auto; width: 100%; }
+  .emb { width: 100px; display: block; margin: 0 auto 6px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.4)); animation: rise 1.2s ease both; }
+  .w-om { color: #f3d9a4; font-family: var(--deva-sans); font-size: 13px; }
+  .w-bless { color: var(--gold-bright); font-family: "Fraunces", serif; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin-top: 30px; line-height: 1.6; animation: rise 1.2s .2s ease both; }
+  .w-inv { font-family: "Fraunces", serif; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin-top: 8px; line-height: 1.6; color: #fbeee0; animation: rise 1.2s .35s ease both; }
+  .w-names { font-family: "Great Vibes", cursive; font-size: 54px; margin-top: 22px; line-height: 1.1; animation: rise 1.2s .5s ease both; }
+  .w-names em { color: var(--gold-bright); font-style: normal; }
+  .w-tag { font-family: "Great Vibes", cursive; font-size: 23px; margin-top: 14px; color: #fbeee0; line-height: 1.35; animation: rise 1.2s .65s ease both; }
+  .w-hr { display: flex; align-items: center; gap: 10px; color: var(--gold-bright); margin: 26px 0; font-size: 13px; }
+  .w-hr::before, .w-hr::after { content: ""; flex: 1; height: 1px; background: rgba(226, 184, 92, .6); }
+  .langs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; animation: rise 1.2s .8s ease both; }
+  .langs button { border-radius: 12px; padding: 14px; font-weight: 600; font-size: 15px; }
+  .langs .en { background: var(--maroon); color: #fff; }
+  .langs .hi { background: #f4ecdd; color: var(--ink); font-family: var(--deva-sans); }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+  /* ---------- App shell ---------- */
+  #app { max-width: 480px; min-height: 100%; margin: 0 auto; position: relative; isolation: isolate; background: var(--bg); box-shadow: 0 0 40px rgba(60, 30, 20, .12); }
+  #app::before { content: ""; position: fixed; z-index: -1; top: 0; bottom: 0; left: 50%; transform: translateX(-50%); width: min(480px, 100%);
+    background: var(--bg) url("assets/floral.webp") center / cover no-repeat; pointer-events: none; }
+  .page { display: none; padding: max(18px, env(safe-area-inset-top)) 16px calc(110px + env(safe-area-inset-bottom)); animation: fade .45s ease; }
+  .page.on { display: block; }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+  .nav { position: fixed; left: 50%; transform: translateX(-50%); bottom: max(12px, env(safe-area-inset-bottom)); width: min(456px, calc(100% - 24px)); z-index: 10;
+    display: flex; background: rgba(245, 232, 205, .96); border: 1px solid var(--line); border-radius: 24px; padding: 6px; box-shadow: 0 8px 24px rgba(60, 30, 20, .12); backdrop-filter: blur(6px); }
+  .nav button { flex: 1; text-align: center; font-size: 11.5px; padding: 7px 0; border-radius: 18px; }
+  .nav button.on { background: rgba(122, 31, 43, .12); color: var(--maroon); font-weight: 600; }
+  .nav svg { display: block; margin: 0 auto 2px; width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+  html[lang="hi"] .nav button { font-family: var(--deva-sans); }
+
+  /* ---------- Home ---------- */
+  .top { position: relative; text-align: center; }
+  .menu-btn { position: absolute; right: 0; top: -6px; width: 36px; height: 36px; display: grid; place-items: center; }
+  .menu-btn svg { width: 22px; height: 22px; stroke: var(--ink); stroke-width: 1.8; fill: none; stroke-linecap: round; }
+  .om { color: var(--maroon); font-family: var(--deva-sans); font-size: 13px; font-weight: 600; }
+  .names { font-family: "Great Vibes", cursive; text-align: center; color: var(--maroon); font-size: 46px; line-height: 1.1; margin-top: 6px; }
+  .couple { display: block; width: 170px; height: auto; margin: 6px auto 0; }
+  .tag { text-align: center; font-family: "Fraunces", serif; color: var(--maroon); font-size: 15px; margin-top: 6px; }
+  html[lang="hi"] .tag { font-family: var(--deva); }
+  .countdown { display: flex; justify-content: space-around; align-items: flex-start; background: rgba(240, 228, 208, .85); border: 1px solid rgba(168, 123, 42, .15); border-radius: 24px; padding: 10px 6px; margin: 14px 0 18px; }
+  .countdown div { text-align: center; font-family: "Fraunces", serif; font-size: 21px; min-width: 52px; }
+  .countdown span { display: block; font-family: "Jakarta"; font-size: 10.5px; color: var(--muted); margin-top: 2px; }
+  html[lang="hi"] .countdown span { font-family: var(--deva-sans); }
+  .countdown i { font-style: normal; color: var(--muted); padding-top: 4px; }
+  .countdown.done { display: block; text-align: center; font-family: "Fraunces"; color: var(--maroon); padding: 14px; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px 18px; text-align: center; }
+  .rule { display: flex; align-items: center; gap: 10px; color: var(--gold); margin: 16px 0; font-size: 11px; }
+  .rule::before, .rule::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .small { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .host { font-family: "Fraunces", serif; font-size: 17px; margin: 6px 0; line-height: 1.4; }
+  html[lang="hi"] .host { font-family: var(--deva-sans); font-weight: 600; }
+  .script { font-family: "Great Vibes", cursive; color: var(--maroon); font-size: 44px; line-height: 1.15; }
+  .with { font-family: "Fraunces", serif; color: var(--gold); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; }
+  html[lang="hi"] .with { font-family: var(--deva); letter-spacing: 0; font-size: 15px; }
+  .body { font-size: 14.5px; line-height: 1.7; }
+  .date { display: inline-block; margin-top: 16px; border: 1px solid var(--gold-soft); color: var(--maroon); border-radius: 999px; padding: 7px 16px; font-family: "Fraunces", serif; font-size: 13.5px; }
+  html[lang="hi"] .date { font-family: var(--deva); font-size: 14.5px; }
+
+  .quote { position: relative; text-align: center; padding: 40px 10px 34px; margin-top: 6px; overflow: hidden; }
+  .quote .mark { position: absolute; left: 50%; top: 6px; transform: translateX(-50%); font-family: "Fraunces", serif; font-size: 130px; line-height: 1; color: rgba(168, 123, 42, .16); pointer-events: none; }
+  .quote .wm { position: absolute; left: 50%; top: 50%; width: 200px; transform: translate(-50%, -50%); opacity: .07; pointer-events: none; }
+  .quote .verse { position: relative; font-family: var(--deva); color: var(--maroon); font-size: 21px; line-height: 1.75; }
+  .quote .src { position: relative; font-size: 11.5px; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 10px; }
+  html[lang="hi"] .quote .src { font-family: var(--deva); letter-spacing: 0; font-size: 14px; text-transform: none; }
+  .quote .meaning { position: relative; font-family: "Great Vibes", cursive; font-size: 24px; line-height: 1.35; margin-top: 12px; opacity: .85; }
+  html[lang="hi"] .quote .meaning { display: none; }
+
+  .install { width: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; gap: 12px; align-items: center; text-align: left; }
+  .install svg { width: 22px; height: 22px; stroke: var(--maroon); fill: none; stroke-width: 1.6; flex: none; stroke-linecap: round; stroke-linejoin: round; }
+  .install b { display: block; font-size: 14px; font-weight: 600; }
+  .install small { display: block; color: var(--gold); font-size: 12.5px; font-weight: 600; margin-top: 2px; }
+  html[lang="hi"] .install b, html[lang="hi"] .install small { font-family: var(--deva-sans); }
+  .signoff { text-align: center; font-family: var(--deva-sans); color: var(--maroon); font-weight: 600; margin: 22px 0 6px; font-size: 15px; }
+
+  /* ---------- Ceremony ---------- */
+  .ptitle { text-align: center; font-size: 14px; margin-bottom: 16px; }
+  html[lang="hi"] .ptitle { font-family: var(--deva-sans); }
+  .dcard { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+  .dcard h2 { font-family: "Fraunces", serif; color: var(--maroon); font-size: 23px; line-height: 1.25; }
+  html[lang="hi"] .dcard h2 { font-family: var(--deva); font-weight: 400; }
+  .dcard .meta { font-size: 12px; color: var(--gold); font-weight: 600; margin-top: 6px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  html[lang="hi"] .dcard .meta { font-family: var(--deva-sans); }
+  .dcard p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-top: 12px; }
+  .attire { display: flex; gap: 12px; background: var(--card-deep); border: 1px solid var(--line); border-radius: 18px; padding: 16px; margin-top: 14px; }
+  .attire svg { width: 30px; height: 30px; flex: none; stroke: var(--gold); fill: none; stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
+  .attire b { display: block; font-family: "Fraunces", serif; font-size: 17px; }
+  html[lang="hi"] .attire b { font-family: var(--deva); font-weight: 400; font-size: 18px; }
+  .attire p { font-size: 13px; color: var(--muted); line-height: 1.55; margin-top: 4px; }
+  .h2 { font-family: "Fraunces", serif; font-size: 23px; margin: 26px 0 14px; }
+  html[lang="hi"] .h2 { font-family: var(--deva); font-weight: 400; }
+  .timeline { border-left: 1.5px solid var(--gold-soft); margin-left: 7px; padding-left: 18px; }
+  .ev { position: relative; padding-bottom: 18px; }
+  .ev::before { content: ""; position: absolute; left: -24px; top: 6px; width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--gold); background: var(--bg); }
+  .ev.dot::before { background: var(--gold); }
+  .ev .t { font-size: 12.5px; font-weight: 600; color: var(--gold); margin-bottom: 2px; }
+  html[lang="hi"] .ev .t { font-family: var(--deva-sans); }
+  .ev h3 { font-size: 18px; font-weight: 500; }
+  .ev h3.red { color: var(--maroon); }
+  .ev p { font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
+  .ev .more { display: none; margin-top: 8px; color: var(--ink); }
+  .ev.open .more { display: block; }
+  .ev .rm { font-size: 13px; font-weight: 700; color: var(--gold); margin-top: 4px; padding: 2px 0; }
+  html[lang="hi"] .ev .rm { font-family: var(--deva-sans); }
+  .ev.main { background: var(--card-deep); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; margin-bottom: 18px; }
+  .ev.main::before { left: -24px; top: 18px; }
+  .ev.main h3 { font-family: "Fraunces", serif; color: var(--maroon); font-size: 19px; }
+  html[lang="hi"] .ev.main h3 { font-family: var(--deva); font-weight: 400; }
+  .info { display: flex; gap: 10px; border: 1px solid var(--line); background: rgba(255, 250, 240, .5); border-radius: 14px; padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .info svg { width: 18px; height: 18px; flex: none; stroke: var(--gold); fill: none; stroke-width: 1.6; margin-top: 1px; }
+
+  /* ---------- Venue ---------- */
+  .vh { font-family: "Fraunces", serif; font-size: 32px; }
+  html[lang="hi"] .vh { font-family: var(--deva); font-weight: 400; }
+  .vs { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .hero { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 16 / 9; background: #ccc url("assets/kasha_resort.jpg") center / cover; }
+  .hero div { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 14px; background: linear-gradient(transparent, rgba(0,0,0,.62)); color: #fff; }
+  .hero b { font-family: "Fraunces", serif; font-size: 24px; display: block; }
+  .hero small { font-size: 12.5px; }
+  .vcard { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; margin-top: 14px; }
+  .vrow { display: flex; gap: 12px; }
+  .vicon { width: 38px; height: 38px; border-radius: 10px; background: rgba(225, 207, 180, .7); display: grid; place-items: center; flex: none; }
+  .vicon svg { width: 20px; height: 20px; stroke: var(--maroon); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .vcard h3 { font-family: "Fraunces", serif; font-size: 21px; }
+  html[lang="hi"] .vcard h3.tr { font-family: var(--deva); font-weight: 400; }
+  .vcard p { font-size: 14px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
+  .vcard .land { font-size: 12.5px; margin-top: 6px; }
+  .btns { display: flex; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+  .btns a, .btns button { display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; padding: 12px; font-size: 14px; font-weight: 600; text-align: center; }
+  html[lang="hi"] .btns a, html[lang="hi"] .btns button { font-family: var(--deva-sans); }
+  .btns svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .btns .p { flex: 2; background: var(--maroon); color: #fff; }
+  .btns .g { flex: 1; border: 1px solid var(--gold-soft); background: rgba(255, 255, 255, .5); }
+  .arrive { font-size: 16px !important; color: var(--ink) !important; margin-top: 4px !important; }
+  .gate { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--muted); }
+  .gate b { color: var(--ink); }
+
+  /* ---------- Sheets & toast ---------- */
+  .scrim { position: fixed; inset: 0; z-index: 20; background: rgba(30, 15, 12, .45); display: none; align-items: flex-end; justify-content: center; }
+  .scrim.on { display: flex; animation: fade .25s ease; }
+  .sheet { width: min(480px, 100%); background: #fdf6ec; border-radius: 22px 22px 0 0; padding: 22px 20px calc(24px + env(safe-area-inset-bottom)); animation: up .3s ease; }
+  @keyframes up { from { transform: translateY(40px); } to { transform: none; } }
+  .sheet h4 { font-family: "Fraunces", serif; font-size: 20px; color: var(--maroon); margin-bottom: 14px; }
+  html[lang="hi"] .sheet h4 { font-family: var(--deva); font-weight: 400; }
+  .sheet ol { padding-left: 20px; font-size: 14.5px; line-height: 1.7; }
+  .sheet .opt { display: block; width: 100%; text-align: left; padding: 14px; border: 1px solid var(--line); border-radius: 14px; margin-top: 10px; font-size: 15px; background: #fff; }
+  .sheet .opt.on { border-color: var(--maroon); color: var(--maroon); font-weight: 600; }
+  .sheet .close { display: block; width: 100%; margin-top: 16px; padding: 13px; border-radius: 12px; background: var(--maroon); color: #fff; font-weight: 600; }
+  html[lang="hi"] .sheet, html[lang="hi"] .sheet .close { font-family: var(--deva-sans); }
+  .toast { position: fixed; left: 50%; bottom: 100px; transform: translate(-50%, 20px); z-index: 40; background: #2b1f1c; color: #fff; padding: 10px 16px; border-radius: 999px; font-size: 13.5px; opacity: 0; transition: .3s; pointer-events: none; white-space: nowrap; }
+  .toast.on { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+<!-- ================= Welcome ================= -->
+<section id="welcome">
+  <div class="veil"><div class="inner">
+    <img class="emb" src="assets/ganesha_invitation.svg" alt="Lord Ganesha">
+    <div class="w-om">श्री गणेशाय नमः</div>
+    <div class="w-bless">With the blessings of Almighty<br>&amp; our beloved family</div>
+    <div class="w-inv">You are cordially invited to<br>the engagement ceremony of</div>
+    <div class="w-names">Aman <em>&amp;</em> Simran</div>
+    <div class="w-tag">Two souls, one promise,<br>a lifetime of togetherness.</div>
+    <div class="w-hr">♡</div>
+    <div class="langs">
+      <button class="en" data-lang="en">English</button>
+      <button class="hi" data-lang="hi">हिन्दी</button>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= App ================= -->
+<div id="app" aria-hidden="true">
+
+  <!-- Home -->
+  <main class="page on" id="home">
+    <div class="top">
+      <div class="om">श्री गणेशाय नमः</div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <div class="names">Aman &amp; Simran</div>
+    <img class="couple" src="assets/couple.gif" width="360" height="359" alt="Aman and Simran with a bouquet">
+    <div class="tag" data-t="tag"></div>
+    <div class="countdown" id="countdown">
+      <div><b id="cd-d">--</b><span data-t="days"></span></div><i>:</i>
+      <div><b id="cd-h">--</b><span data-t="hours"></span></div><i>:</i>
+      <div><b id="cd-m">--</b><span data-t="minutes"></span></div><i>:</i>
+      <div><b id="cd-s">--</b><span data-t="seconds"></span></div>
+    </div>
+
+    <div class="card">
+      <p class="om" style="font-size:14.5px">॥ श्री गणेशाय नमः ॥</p>
+      <div class="rule">✦</div>
+      <div id="blessing"></div>
+      <div class="rule">✦</div>
+      <p class="host" data-t="parentsGroom"></p>
+      <p class="body" data-t="inviteLine"></p>
+      <div class="script" style="margin-top:6px">Aman</div>
+      <div class="with" data-t="with"></div>
+      <div class="script">Simran</div>
+      <p class="body" data-t="daughterOf"></p>
+      <p class="body" data-t="inviteAfter" style="margin-top:8px"></p>
+      <div class="date" data-t="dateChip"></div>
+    </div>
+
+    <div class="quote">
+      <img class="wm" src="assets/emblem.webp" alt="">
+      <div class="mark">“</div>
+      <div class="verse">जेहि कें जेहि पर सत्य सनेहू।<br>सो तेहि मिलइ न कछु संदेहू॥</div>
+      <div class="src" data-t="quoteSrc"></div>
+      <div class="meaning">Whoever loves another with a true heart<br>is surely united with them.</div>
+    </div>
+
+    <button class="install" id="installBtn">
+      <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M12 8v6M9 11l3 3 3-3M10 18h4"/></svg>
+      <span><b data-t="keepClose"></b><small data-t="showHow"></small></span>
+    </button>
+    <div class="signoff" data-t="signoff"></div>
+  </main>
+
+  <!-- Ceremony -->
+  <main class="page" id="ceremony">
+    <div class="ptitle" data-t="navCeremony"></div>
+    <div class="dcard">
+      <h2 data-t="cDate"></h2>
+      <div class="meta" data-t="cMeta"></div>
+      <p data-t="cDesc"></p>
+    </div>
+    <div class="attire">
+      <!-- kurta -->
+      <svg viewBox="0 0 32 32"><path d="M12 3h8l2.5 1.5 4.5 3 1.5 9h-4l-1-5.5V29H8.5V11L7.5 16.5h-4L5 7.5l4.5-3z"/><path d="M12 3c.5 2.2 2 3.4 4 3.4S19.5 5.2 20 3"/><path d="M16 6.4v8"/><circle cx="16" cy="9" r=".6" fill="currentColor"/><circle cx="16" cy="12" r=".6" fill="currentColor"/><path d="M8.5 25.5h15"/><path d="M11 25.5l1-1.5 1 1.5 1-1.5 1 1.5 1-1.5 1 1.5 1-1.5 1 1.5 1-1.5 1 1.5"/></svg>
+      <div><b data-t="attireTitle"></b><p data-t="attireDesc"></p></div>
+    </div>
+    <div class="h2" data-t="unfolds"></div>
+    <div class="timeline" id="timeline"></div>
+    <div class="info">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+      <span data-t="naturally"></span>
+    </div>
+  </main>
+
+  <!-- Venue -->
+  <main class="page" id="venue">
+    <div class="vh" data-t="navVenue"></div>
+    <div class="vs" data-t="city"></div>
+    <div class="hero"><div><b>The Kasha Resort</b><small data-t="landmark"></small></div></div>
+    <div class="vcard">
+      <div class="vrow">
+        <div class="vicon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div>
+          <h3>The Kasha Resort</h3>
+          <p>Varanasi Ring Road, Nakchhdpur, Varanasi, Uttar Pradesh 221007</p>
+          <p class="land">◎ <span data-t="landmark"></span></p>
+        </div>
+      </div>
+      <div class="btns">
+        <a class="p" href="https://maps.app.goo.gl/gRHkmr4sEDZbAtnE8" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/></svg><span data-t="directions"></span></a>
+        <button class="g" id="copyMap" data-t="mapLink"></button>
+      </div>
+    </div>
+    <div class="vcard">
+      <div class="vrow">
+        <div class="vicon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div>
+          <h3 class="tr" data-t="arrivalTitle"></h3>
+          <p class="arrive" data-t="arrivalTime"></p>
+        </div>
+      </div>
+      <div class="gate"><span data-t="entryGate"></span> <b data-t="gateNo"></b><br><span data-t="gateNote"></span></div>
+    </div>
+  </main>
+
+  <nav class="nav">
+    <button data-go="home" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span data-t="navHome"></span></button>
+    <button data-go="ceremony"><svg viewBox="0 0 24 24"><path d="M6 3h12l3 6-9 12L3 9z M3 9h18 M9 3l3 18 3-18"/></svg><span data-t="navCeremony"></span></button>
+    <button data-go="venue"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-t="navVenue"></span></button>
+  </nav>
+</div>
+
+<!-- Menu sheet -->
+<div class="scrim" id="menuSheet"><div class="sheet">
+  <h4 data-t="language"></h4>
+  <button class="opt" data-lang="en">English</button>
+  <button class="opt" data-lang="hi" style="font-family: var(--deva-sans)">हिन्दी</button>
+  <button class="opt" id="replayWelcome" data-t="replay"></button>
+  <button class="close" data-close data-t="done"></button>
+</div></div>
+
+<!-- Install sheet -->
+<div class="scrim" id="installSheet"><div class="sheet">
+  <h4 data-t="installTitle"></h4>
+  <ol id="installSteps"></ol>
+  <button class="close" data-close data-t="done"></button>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const MAP_URL = "https://maps.app.goo.gl/gRHkmr4sEDZbAtnE8";
+  const EVENT_START = new Date("2026-12-08T15:00:00+05:30");
+
+  const T = {
+    en: {
+      tag: "Engagement Celebrations",
+      days: "Days", hours: "Hours", minutes: "Minutes", seconds: "Seconds",
+      blessing: '<p class="small">With the divine blessings of</p><p class="host">Grandparents</p>',
+      parentsGroom: "Mrs. Mira & Mr. M.K. Srivastava",
+      inviteLine: "request the pleasure of your gracious presence, along with your family, at the engagement of their son",
+      with: "with",
+      daughterOf: "daughter of\nMrs. Sharat & Mr. J.K. Srivastava",
+      inviteAfter: "",
+      dateChip: "Tuesday, 8th December 2026 · Varanasi",
+      quoteSrc: "— Shri Ramcharitmanas",
+      keepClose: "Keep this invitation close", showHow: "Show me how →",
+      signoff: "सप्रेम, श्रीवास्तव परिवार",
+      navHome: "Home", navCeremony: "Ceremony", navVenue: "Venue",
+      cDate: "Tuesday, 8th December 2026",
+      cMeta: "Engagement Celebrations · Varanasi",
+      cDesc: "An evening of traditions, blessings, and togetherness as two families celebrate a beautiful new beginning.",
+      attireTitle: "Festive Attire, Your Way",
+      attireDesc: "Wear what feels comfortable and festive. Traditional or formal attire is welcome, but there is no dress code.",
+      unfolds: "As the Celebration Unfolds",
+      naturally: "Each moment will unfold naturally, with traditions guiding the way.",
+      readMore: "Read More", readLess: "Read Less",
+      city: "Varanasi, Uttar Pradesh", landmark: "Near Varanasi Trade Center",
+      directions: "Guest Directions", mapLink: "Map Link", copied: "Map link copied",
+      arrivalTitle: "Guest arrival", arrivalTime: "3:00–4:00 PM",
+      entryGate: "Entry gate", gateNo: "Gate No. 1", gateNote: "Please use Gate No. 1 for guest arrival.",
+      language: "Language", replay: "View the welcome screen again", done: "Done",
+      today: "Today is the day! 🌸", after: "Thank you for your blessings 🙏",
+      installTitle: "Add this invitation to your Home Screen",
+      stepsIOS: ["Open this link in Safari.", "Tap the Share button (square with an arrow).", "Choose “Add to Home Screen”, then tap Add."],
+      stepsAndroid: ["Open this link in Chrome.", "Tap the ⋮ menu at the top right.", "Choose “Add to Home screen” or “Install app”."],
+      events: [
+        { t: "3:00 PM – 4:00 PM", h: "Arrival & Welcome", p: "Join us as family and friends gather to celebrate.", dot: true },
+        { t: "From 4:00 PM onwards", h: "Traditional Rituals", red: true, dot: true },
+        { h: "Barichha", p: "Simran’s family blesses Aman and welcomes the match.", m: "A cherished tradition where the bride’s family visits and blesses the groom, formally expressing their acceptance of the marriage proposal." },
+        { h: "Tilak", p: "A blessing that celebrates the bond between two families.", m: "A meaningful ceremony symbolizing the formal bond between two families, celebrating their shared blessings, traditions, and commitment to the upcoming marriage." },
+        { h: "Godh Bharai", p: "Aman’s family welcomes and blesses Simran.", m: "A heartfelt tradition where the groom’s family welcomes the bride-to-be, expressing their love, blessings, and acceptance of her as their future daughter-in-law." },
+        { h: "Ring Ceremony · Main Celebration", p: "Aman and Simran exchange rings with their loved ones beside them.", m: "The special moment when Aman and Simran exchange rings, celebrating their commitment to one another in the presence of their loved ones.", main: true },
+        { t: "After the ceremonies", h: "Dinner", p: "Stay for dinner and celebrate together.", m: "Join us for a delightful dinner, warm conversations, and cherished moments as we celebrate the beginning of this beautiful journey together." }
+      ]
+    },
+    hi: {
+      tag: "सगाई समारोह",
+      days: "दिन", hours: "घंटे", minutes: "मिनट", seconds: "सेकंड",
+      blessing: '<p class="host">परम पूज्य दादा-दादी जी</p><p class="small">के शुभ आशीर्वाद से</p>',
+      parentsGroom: "श्रीमती मीरा एवं श्री एम.के. श्रीवास्तव",
+      inviteLine: "अपने सुपुत्र",
+      with: "संग",
+      daughterOf: "सुपुत्री श्रीमती शरत एवं श्री जे.के. श्रीवास्तव",
+      inviteAfter: "के शुभ सगाई समारोह में आपको सपरिवार सादर आमंत्रित करते हैं।",
+      dateChip: "मंगलवार, 8 दिसंबर 2026 · वाराणसी",
+      quoteSrc: "— श्री रामचरितमानस",
+      keepClose: "इस निमंत्रण को पास रखें", showHow: "तरीका देखें →",
+      signoff: "सप्रेम, श्रीवास्तव परिवार",
+      navHome: "मुख्य पृष्ठ", navCeremony: "समारोह", navVenue: "स्थान",
+      cDate: "मंगलवार, 8 दिसंबर 2026",
+      cMeta: "सगाई समारोह · वाराणसी",
+      cDesc: "परंपराओं, आशीर्वाद और अपनेपन से सजी एक खूबसूरत शाम, जहाँ दो परिवार मिलकर एक नए रिश्ते की शुरुआत का जश्न मनाएँगे।",
+      attireTitle: "आपकी पसंद, आपका परिधान",
+      attireDesc: "पारंपरिक, शाही या औपचारिक भारतीय परिधान इस खास अवसर की शोभा बढ़ाएँगे। हालाँकि, पहनावे की कोई बाध्यता नहीं है। आप जिस परिधान में सहज महसूस करें, उसी में पधारें।",
+      unfolds: "इस खास दिन की झलकियाँ",
+      naturally: "हर रस्म अपने सहज क्रम में आगे बढ़ेगी, ताकि हम सभी इस खास दिन के हर पल का भरपूर आनंद ले सकें।",
+      readMore: "और पढ़ें", readLess: "कम पढ़ें",
+      city: "वाराणसी, उत्तर प्रदेश", landmark: "वाराणसी ट्रेड सेंटर के पास",
+      directions: "अतिथि दिशा-निर्देश", mapLink: "मैप लिंक", copied: "मैप लिंक कॉपी हो गया",
+      arrivalTitle: "अतिथि आगमन", arrivalTime: "दोपहर 3:00–4:00 बजे",
+      entryGate: "प्रवेश द्वार", gateNo: "गेट नंबर 1", gateNote: "अतिथियों के आगमन के लिए कृपया गेट नंबर 1 का उपयोग करें।",
+      language: "भाषा", replay: "स्वागत पृष्ठ फिर से देखें", done: "हो गया",
+      today: "आज वह शुभ दिन है! 🌸", after: "आपके आशीर्वाद के लिए धन्यवाद 🙏",
+      installTitle: "इस निमंत्रण को होम स्क्रीन पर जोड़ें",
+      stepsIOS: ["यह लिंक Safari में खोलें।", "Share बटन (तीर वाला चौकोर) दबाएँ।", "“Add to Home Screen” चुनें, फिर Add दबाएँ।"],
+      stepsAndroid: ["यह लिंक Chrome में खोलें।", "ऊपर दाईं ओर ⋮ मेनू दबाएँ।", "“Add to Home screen” या “Install app” चुनें।"],
+      events: [
+        { t: "दोपहर 3:00 से 4:00 बजे तक", h: "आगमन एवं स्वागत", p: "आपके आगमन के साथ हमारे इस खास दिन की खूबसूरत शुरुआत होगी।", dot: true },
+        { t: "शाम 4:00 बजे से", h: "पारंपरिक रस्में", red: true, dot: true },
+        { h: "बरिछा", p: "सिमरन के परिवार की ओर से अमन के लिए स्नेह और आशीर्वाद।", m: "यह एक पारंपरिक रस्म है, जिसमें सिमरन का परिवार अमन को आशीर्वाद देकर विवाह के प्रस्ताव को स्नेहपूर्वक स्वीकार करता है। यह दोनों परिवारों के बीच बनने वाले नए रिश्ते की एक शुभ शुरुआत है।" },
+        { h: "तिलक", p: "दो परिवारों के मिलन और आशीर्वाद की पावन रस्म।", m: "तिलक दो परिवारों के औपचारिक जुड़ाव का प्रतीक है। इस रस्म में परिवार अपने आशीर्वाद, स्नेह और परंपराओं के साथ आने वाले विवाह के प्रति अपना संकल्प व्यक्त करते हैं।" },
+        { h: "गोद भराई", p: "अमन के परिवार की ओर से सिमरन का स्नेहपूर्ण स्वागत।", m: "यह एक स्नेहभरी परंपरा है, जिसमें अमन का परिवार सिमरन का अपनी होने वाली बहू के रूप में स्वागत करता है और उसे प्रेम, आशीर्वाद एवं अपनापन देता है।" },
+        { h: "अंगूठियों का आदान-प्रदान", p: "अपनों के आशीर्वाद के बीच अमन और सिमरन एक-दूसरे को अंगूठी पहनाएँगे।", m: "यह हमारी सगाई का सबसे खास पल होगा, जब अमन और सिमरन अपने प्रियजनों की मौजूदगी में एक-दूसरे को अंगूठी पहनाकर जीवन के इस नए सफ़र में साथ निभाने का वादा करेंगे।", main: true },
+        { t: "रस्मों के बाद", h: "रात्रिभोज", p: "रस्मों के बाद रात्रिभोज और कुछ यादगार पलों के लिए हमारे साथ बने रहें।", m: "इस खूबसूरत शुरुआत की खुशियाँ बाँटने के लिए रात्रिभोज, आत्मीय बातचीत और अपनों के साथ कुछ यादगार पलों में हमारे साथ शामिल हों।" }
+      ]
+    }
+  };
+
+  let lang = "en";
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => document.querySelectorAll(s);
+
+  function esc(s) { return s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+  function render() {
+    const L = T[lang];
+    document.documentElement.lang = lang;
+    $$("[data-t]").forEach((el) => {
+      const v = L[el.dataset.t] ?? "";
+      el.innerHTML = esc(v).replace(/\n/g, "<br>");
+      el.style.display = v === "" && el.tagName === "P" ? "none" : "";
+    });
+    $("#blessing").innerHTML = L.blessing;
+
+    $("#timeline").innerHTML = L.events.map((e, i) => `
+      <div class="ev${e.dot ? " dot" : ""}${e.main ? " main" : ""}" data-i="${i}">
+        ${e.t ? `<div class="t">${esc(e.t)}</div>` : ""}
+        <h3${e.red ? ' class="red"' : ""}>${esc(e.h)}</h3>
+        ${e.p ? `<p>${esc(e.p)}</p>` : ""}
+        ${e.m ? `<p class="more">${esc(e.m)}</p><button class="rm">${L.readMore}</button>` : ""}
+      </div>`).join("");
+
+    const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    $("#installSteps").innerHTML = (ios ? L.stepsIOS : L.stepsAndroid).map((s) => `<li>${esc(s)}</li>`).join("");
+    $$(".sheet .opt[data-lang]").forEach((b) => b.classList.toggle("on", b.dataset.lang === lang));
+    tick();
+  }
+
+  function setLang(l) {
+    lang = l;
+    try { localStorage.setItem("as-lang", l); } catch (e) {}
+    render();
+  }
+
+  // Welcome → app
+  $$("#welcome [data-lang]").forEach((b) => b.addEventListener("click", () => {
+    setLang(b.dataset.lang);
+    $("#welcome").classList.add("gone");
+    $("#app").removeAttribute("aria-hidden");
+  }));
+
+  // Navigation
+  function go(id) {
+    $$(".page").forEach((p) => p.classList.toggle("on", p.id === id));
+    $$(".nav button").forEach((b) => b.classList.toggle("on", b.dataset.go === id));
+    window.scrollTo(0, 0);
+    try { if (location.hash !== "#" + id) history.replaceState(null, "", "#" + id); } catch (e) {}
+  }
+  $$(".nav button").forEach((b) => b.addEventListener("click", () => go(b.dataset.go)));
+
+  // Read more
+  $("#timeline").addEventListener("click", (e) => {
+    const btn = e.target.closest(".rm");
+    if (!btn) return;
+    const ev = btn.closest(".ev");
+    ev.classList.toggle("open");
+    btn.textContent = ev.classList.contains("open") ? T[lang].readLess : T[lang].readMore;
+  });
+
+  // Countdown
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function tick() {
+    const cd = $("#countdown");
+    const diff = EVENT_START - Date.now();
+    if (diff <= 0) {
+      const sameDay = diff > -12 * 3600 * 1000;
+      cd.classList.add("done");
+      cd.textContent = sameDay ? T[lang].today : T[lang].after;
+      return;
+    }
+    const s = Math.floor(diff / 1000);
+    $("#cd-d").textContent = Math.floor(s / 86400);
+    $("#cd-h").textContent = pad(Math.floor((s % 86400) / 3600));
+    $("#cd-m").textContent = pad(Math.floor((s % 3600) / 60));
+    $("#cd-s").textContent = pad(s % 60);
+  }
+  setInterval(tick, 1000);
+
+  // Sheets
+  const open = (id) => $(id).classList.add("on");
+  $$(".scrim").forEach((s) => s.addEventListener("click", (e) => {
+    if (e.target === s || e.target.closest("[data-close]")) s.classList.remove("on");
+  }));
+  $("#menuBtn").addEventListener("click", () => open("#menuSheet"));
+  $("#installBtn").addEventListener("click", () => open("#installSheet"));
+  $$("#menuSheet [data-lang]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
+  $("#replayWelcome").addEventListener("click", () => {
+    $("#menuSheet").classList.remove("on");
+    $("#welcome").classList.remove("gone");
+  });
+
+  // Copy map link
+  function toast(msg) {
+    const t = $("#toast");
+    t.textContent = msg;
+    t.classList.add("on");
+    clearTimeout(toast.h);
+    toast.h = setTimeout(() => t.classList.remove("on"), 2200);
+  }
+  $("#copyMap").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(MAP_URL); toast(T[lang].copied); }
+    catch (e) { window.open(MAP_URL, "_blank", "noopener"); }
+  });
+
+  // Init
+  try { lang = localStorage.getItem("as-lang") || "en"; } catch (e) {}
+  render();
+  const start = location.hash.slice(1);
+  if (["home", "ceremony", "venue"].includes(start)) go(start);
+</script>
+</body>
+</html>
